@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "base-nvidia-business"
+version = "0.1.0"
+description = "Base repo untuk implementasi bisnis berbasis NVIDIA (inference, video processing)."
+authors = [{name = "Tim Anda", email = "you@example.com"}]
+dependencies = [
+    "torch>=2.0",
+    "numpy",
+    "opencv-python",
+    "protobuf",
+    "fastapi",
+    "uvicorn",
+    "pycuda; extra == \"gpu\"",
+]
